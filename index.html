@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title class="glow">Teleporter Technician</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="intro-container">
+    <h1><span id="tele" >Teleporter</span><span class="slide-right" id="tech"> Technician</span></h1>
+    <p class="text" id="tagline">All the teleporters to the <span id="color-dimen">Color Dimension</span> have gone wacky! <br> We need you to get in there and figure out which teleporters match!</p>
+
+    
+    <div id="difficulty">
+      <p class="text" id="diff-label" >How many teleporters can you handle at once?</p>
+      <div id="difficulty-buttons-container">
+        <button class="difficulty-buttons" id="easy" value="2">uhh...10?</button>
+        <button class="difficulty-buttons" id="medium" value="4">20 should be good</button>
+        <button class="difficulty-buttons" id="hard" value="6">Give me 30!</button>
+      </div>
+      <div id="start-container">
+        <button disabled id="start">Choose Difficulty...</button>
+      </div>
+    </div>
+
+
+    
+  </div>
+
+    <div class="text" id="game-info-container">
+      <div class="game-info-item" id="timer-container">Timer: <span id="timer">0:00</span></div>
+      <div class="game-info-item" id="score-container">Score: <span id="score">0</span></div>
+      <div class="game-info-item" id="high-score-container"><p id="difficulty-score"></p> <p>High Score: <span id="high-score">--</span></p><p>Time: <span id="high-score-time">--</span></p></div>
+    </div>
+   
+
+    <div class="game-container">
+    </div>
+    <script src="script.js"></script> 
+  </body>
+</html>
