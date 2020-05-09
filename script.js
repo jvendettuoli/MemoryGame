@@ -8,7 +8,6 @@ Only show game-info on Start
 Game container border spinning cyan - magenta
 More difficulty levels (number of cards vs set levels)
 Clean up score updating and display
-
 Clean up global name space 
 	-Convert game state properties to an object
 	-Find where variables can be passed as arguments and/or returned instead
@@ -145,12 +144,6 @@ function handleCardClick(event) {
 	//Change card style to shown
 	event.target.classList.toggle('shown');
 	event.target.parentNode.classList.toggle('shown');
-	// for (cardBack of cardBacks) {
-	// 	cardBack.classList.add('victory');
-	// }
-	// for (card of cards) {
-	// 	card.classList.add('victory');
-	// }
 
 	//If only 1 card is flipped, exit
 	if (cardCount === 1) {
@@ -167,6 +160,7 @@ function handleCardClick(event) {
 		activeCards = [];
 		cardCount = 0;
 		solvedCount++;
+		//Checks if all matches have been found and starts gameOver sequence
 		if (solvedCount === cards.length / 2) {
 			updateHighScore(score);
 			gameOver();
